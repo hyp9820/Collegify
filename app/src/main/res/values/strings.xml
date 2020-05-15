@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Collegify</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_security_question">SecurityQuestionActivity</string>
+    <string name="title_activity_google_maps">Map</string>
+
+</resources>

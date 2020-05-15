@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ChangeSecurityQuestions"
+    tools:context=".ChangeSecurityQuestionActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/gradient"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <TextView
+        android:id="@+id/quest"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/serif"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/oldanswer"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+
+        android:layout_below="@id/quest"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edit_round"
+        android:drawableLeft="@drawable/ic_answer"
+        android:drawablePadding="10dp"
+        android:hint="Enter the answer"
+        android:inputType="textMultiLine"
+        android:paddingLeft="10dp" />
+
+
+    <EditText
+        android:id="@+id/squestion"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+
+        android:layout_below="@+id/oldanswer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_round"
+
+        android:drawableLeft="@drawable/ic_questionmark"
+        android:drawablePadding="10dp"
+        android:hint="Enter New Security Question"
+        android:inputType="textMultiLine"
+        android:paddingLeft="10dp" />
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/answer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/bg"
+        android:drawableLeft="@drawable/send"
+        android:paddingLeft="10dp"
+        android:paddingRight="30dp"
+        android:text="Submit"
+        android:textAllCaps="false" />
+
+    <EditText
+        android:id="@+id/answer"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+
+        android:layout_below="@+id/squestion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_round"
+
+        android:drawableLeft="@drawable/ic_answer"
+        android:drawablePadding="10dp"
+        android:hint="Enter New answer"
+        android:inputType="textMultiLine"
+        android:paddingLeft="10dp" />
+
+</RelativeLayout>
